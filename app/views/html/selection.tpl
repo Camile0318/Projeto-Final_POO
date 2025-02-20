@@ -1,4 +1,4 @@
-<!bbbbbbbb html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -29,13 +29,7 @@
     </div>
 
     <script>
-        function startGame() {
-            const language = document.getElementById("language").value;
-            const level = document.getElementById("level").value;
-
-            // Redireciona para o jogo passando os parâmetros na URL
-            window.location.href = `/game?language=${language}&level=${level}`;
-        }
+        <script src="selection.js"></script>
     </script>
 </body>
 </html>
