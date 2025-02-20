@@ -1,23 +1,20 @@
 from bottle import template
-from models.word_loader import WordLoader
 
 class Application:
     def __init__(self):
-        # Usando um dicionário para mapear páginas aos seus templates
+        # Dicionário para mapear as páginas aos seus respectivos templates
         self.pages = {
-            'home': lambda: template('app/views/html/home'),
-            'game': lambda: template('app/views/html/game')
+            'home': 'home',        # boas-vindas e registro
+            'selection': 'selection',  # configuração do jogo
+            'game': 'game',        # jogo
+            'points': 'points'     # jogador acessa seus pontos
         }
 
     def render(self, page):
-        # Tenta renderizar a página; se não existir, chama `helper()`
-        content = self.pages.get(page, self.helper)
-        return content()
+        # Se a página não for encontrada, renderiza um template de erro
+        template_name = self.pages.get(page, 'error')  # 'error' se a página não existir
+        return template(f'app/views/html/{template_name}.tpl')
 
-    def helper(self):
-        return "Página não encontrada! Verifique o nome da página."
-
-
-word_loader = WordLoader()
-words = word_loader.get_words("portuguese")  # Pegando palavras em português
-print(words)  # Deve exibir as palavras do JSON
+    def page_not_found(self):
+        # Retorna um template de erro personalizado
+        return "Página não encontrada!"

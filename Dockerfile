@@ -3,7 +3,7 @@ FROM python:3.12
 WORKDIR /bdir
 
 RUN pip install --upgrade pip &&\
-    pip install bottle # bibliotecas que vamos usar 
+    pip install bottle #bibliotecas que vamos usar 
 
 EXPOSE 8080
 
