@@ -1,33 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!bbbbbbbb html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo ao Jogo</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>Seleção de Jogo - Caça-Palavras</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Bem-vindo ao nosso jogo!</h1>
-            <p>Estamos felizes por você estar aqui. Prepare-se para se divertir!</p>
-        </header>
+    <h1>Seleção de Jogo - Caça-Palavras</h1>
 
-        <section class="intro">
-            <h2>Como Funciona?</h2>
-            <p>Este é um jogo interativo onde você pode testar suas habilidades. Clique abaixo para começar a jogar!</p>
-        </section>
+    <div>
+        <label for="language">Idioma:</label>
+        <select id="language">
+            <option value="portuguese">Português</option>
+            <option value="english">Inglês</option>
+            <option value="spanish">Espanhol</option>
+            <option value="french">Francês</option>
+            <option value="italian">Italiano</option>
+        </select>
 
-        <section class="actions">
-            <a href="/selection" class="btn btn-primary">Iniciar Jogo</a>
-            <p>Ou, se quiser, acesse seus pontos:</p>
-            <a href="/points" class="btn btn-secondary">Ver Meus Pontos</a>
-        </section>
+        <label for="level">Nível:</label>
+        <select id="level">
+            <option value="easy">Fácil</option>
+            <option value="medium">Médio</option>
+            <option value="hard">Difícil</option>
+        </select>
 
-        <footer>
-            <p>&copy; 2025 Jogo Divertido - Todos os direitos reservados.</p>
-        </footer>
+        <button onclick="startGame()">Iniciar Jogo</button>
     </div>
+
+    <script>
+        function startGame() {
+            const language = document.getElementById("language").value;
+            const level = document.getElementById("level").value;
+
+            // Redireciona para o jogo passando os parâmetros na URL
+            window.location.href = `/game?language=${language}&level=${level}`;
+        }
+    </script>
 </body>
 </html>
