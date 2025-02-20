@@ -1,0 +1,25 @@
+{
+    "french_easy" : ["Amie", "Ange", "Auto", "Bise", "Bleu", "Bois", "Chat", "Cher", "Chou", "Ciel",
+    "Crux", "Dent", "Doux", "Drôle", "Eau", "Élan", "Elle", "Fleur", "Force", "Frais",
+    "Froid", "Heure", "Homme", "Joli", "Jeune", "Lune", "Livre", "Lourd", "Mer", "Mère",
+    "Miel", "Mignon", "Noir", "Nuage", "Paix", "Rêve", "Roux", "Soir", "Terre", "Vert"],
+
+    "french_medium" : [ "Abondance", "Accordeur", "Admirable", "Alouettes", "Amusantes",
+    "Applaudir", "Aventureux", "Balayages", "Bienfaits", "Bravoure",
+    "Camarades", "Cascadeur", "Chaleureux", "Charmante", "Clarté",
+    "Confiance", "Danseuses", "Délicieux", "Désespoir", "Diligence",
+    "Éblouissant", "Écologique", "Enchantée", "Endurance", "Fabuleuse",
+    "Fascinant", "Flamboyer", "Fraternité", "Généreux", "Habituels",
+    "Harmonie", "Hilarants", "Illusions", "Jubilante", "Laborieux",
+    "Légendaire", "Magnifique", "Merveille", "Nuageuses", "Optimisme"],
+
+    "french_hard" : ["Aimer", "Aller", "Apporter", "Apprendre", "Arriver",
+    "Attendre", "Boire", "Changer", "Chanter", "Chercher",
+    "Comprendre", "Connaître", "Courir", "Croire", "Demander",
+    "Descendre", "Devenir", "Dire", "Donner", "Dormir",
+    "Écouter", "Écrire", "Entrer", "Envoyer", "Espérer",
+    "Essayer", "Être", "Faire", "Finir", "Gagner",
+    "Jouer", "Lire", "Manger", "Mettre", "Oublier",
+    "Parler", "Partir", "Penser", "Pouvoir", "Regarder"]
+
+}

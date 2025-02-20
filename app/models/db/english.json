@@ -1,0 +1,24 @@
+{
+
+    "english_easy" : [
+    "apple", "bread", "cloud", "dance", "eagle", "flame", "grape", "house", "ideal", "jolly",
+    "kites", "lions", "moon", "nest", "open", "park", "quiet", "rose", "star", "tree",
+    "unit", "vibe", "wind", "xray", "yoga", "zone", "bark", "cheese", "dawn", "earth",
+    "flood", "gate", "halt", "iron", "joke", "kind", "lamp", "mine", "note", "oil"] ,
+
+    "english_medium" : [
+    "underwater", "television", "telephone", "adventure", "courageous", "freelancer", "detective", "cousin", "charities", "marigold",
+    "mankind", "brightness", "conscious", "abundant", "dangerous", "elegance", "landscape", "reception", "perception", "happiness",
+    "brilliant", "developer", "fundamental", "stability", "alligator", "infinity", "carpet", "abundance", "cellphone", "generate",
+    "movement", "ceremony", "negativity", "democracy", "reputable", "frequent", "exploration", "activity", "relativity", "analysis",
+    "spiritually", "recovery", "affirmation", "education", "consequent"],
+
+    "english_hard" : [
+    "subterranean", "unbelievable", "exceptional", "extraordinary", "uncontrollable", "unforgettable", "revolutionary", "overwhelming", "questionnaire", "counterbalance",
+    "simplification", "transformation", "metamorphosis", "communication", "establishment", "determination", "contemplation", "acknowledgement", "reconciliation", "accountability",
+    "misunderstanding", "collaboration", "introduction", "generalization", "identification", "interpretation", "acceleration", "segmentation", "recommendation", "unpredictable",
+    "individuality", "intensification", "preparation", "characteristics", "explanation", "complication", "understanding", "appreciation", "imagination", "rejuvenation",
+    "development", "responsibility", "contribution", "congratulation"]
+
+
+}

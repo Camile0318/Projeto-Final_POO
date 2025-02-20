@@ -1,4 +1,4 @@
-# #Esse código cria um servidor web simples usando o framework Bottle
+#Esse código cria um servidor web simples usando o framework Bottle
 
 from app.controllers.application import Application
 from bottle import Bottle, route, run, request, static_file, response, redirect 

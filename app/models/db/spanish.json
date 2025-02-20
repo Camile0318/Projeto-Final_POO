@@ -1,0 +1,28 @@
+{
+    "spanish_easy" : ["fresa", "ratón", "adios", "lucha", "fuego",
+    "tren", "perla", "silla", "luna", "hola",
+    "flor", "viento", "aceite", "coche", "nieve",
+    "nuevo", "hoja", "rojo", "mejor", "campo",
+    "mirar", "hacer", "piedra", "leche", "zapato",
+    "cielo", "lago", "flor", "papa", "mama",
+    "hermano", "abuela", "silla", "hombre", "sol",
+    "ventana", "viento", "piedra"],
+    
+    "spanish_medium" : ["cumpleanos", "relación", "avanzado", "misterio", "cualquier", 
+    "despacho", "exclusivo", "movimiento", "prácticas", "sorpresa", 
+    "especial", "compañero", "observado", "decisión", "amistoso", 
+    "proyecto", "pintores", "acercado", "estudio", "valiente",
+    "acercar", "sensible", "despido", "conocer", "diferente", 
+    "cultura", "completo", "exclusivo", "solitario", "progreso", 
+    "mariposa", "constante", "autores", "desastre", "entendido", 
+    "peligroso", "sentimiento", "acuerdo", "estudio", "aprecio"],
+    
+    "spanish_hard" : ["anaranjada", "desoxirribonucleico", "ferrocarril", "incomprensible", "desesperación", 
+    "extraordinario", "hipopotomonstrosesquipedaliofobia", "sobrealimentación", "inconmensurable", "desinteresado", 
+    "inexplicable", "transatlántico", "característico", "subterráneo", "inconfundible", 
+    "indestructible", "contrarrevolucionario", "insoportable", "extraordinaria", "incomprensibilidad", 
+    "increíblemente", "antidisturbios", "irreconciliable", "desproporcionado", "incondicional", 
+    "espectacular", "incuestionable", "intransigente", "inconsciente", "desenfrenado", 
+    "impresionante", "especulativo", "despreocupado", "súpercalifragilístico", "antiestablishment", 
+    "indivisible", "infraestructura", "heterodoxo", "irreversible", "imperturbable"]
+}

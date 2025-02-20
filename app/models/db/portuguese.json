@@ -1,0 +1,29 @@
+{
+    "portuguese_easy" : ["gato", "livro", "bola", "mesa", "mãe",
+    "casa", "flor", "pato", "fogo", "pão",
+    "amor", "sol", "vaca", "chave", "público",
+    "praia", "jardim", "irmã", "caneta", "feliz",
+    "arroz", "guitarra", "carro", "avião", "corda",
+    "dança", "flor", "rosa", "brisa", "pedaço",
+    "navio", "feira", "pedra", "gala", "teia",
+    "vento", "orla", "matriz", "banco", "lua"],
+    
+    "portuguese_medium" : ["abacaxi", "abissal", "afogamento", "alfinete", "almoço",
+  "amplitude", "anatomia", "autêntico", "avançado", "bancário",
+  "batimento", "cachoeira", "caminhão", "complicado", "dicionário",
+  "escritório", "esperança", "fogueteiro", "frustração", "gatilho",
+  "girassol", "hipócrita", "informatica", "impressionante", "inocente",
+  "integrar", "involucrado", "legítima", "metamorfose", "observador",
+  "ofício", "ordenado", "planilha", "plantei", "prudência", 
+  "reconhecimento", "restaurador", "silencioso", "solitário", "vanguarda"],
+    
+    "portuguese_hard" : ["Idiossincrasia", "Ininterruptamente", "inconstitucional", 
+  "paralelepípedo", "psicopedagogo", "orrinolaringologista", "anticoncepcional", 
+  "desproporcionadamente", "incompreensibilidade", "irracionalidade", "substancialismo", 
+  "superexaltado", "quimicamente", "imperturbabilidade", "incongruente", "desprovido", 
+  "irrefutável", "idiossincrático", "subterrâneo", "perplexidade", "desentendimento", 
+  "intransigência", "irredutível", "inexorável", "influenciável", "transcendental", 
+  "transbordante", "extravagante", "melancolia", "enciclopédia", "hermetismo", 
+  "incompreensível", "involuntário", "provocativo", "destemido", "imperceptível", 
+  "descompensado", "pernicioso", "imprevisível", "subterfúgio"]
+}

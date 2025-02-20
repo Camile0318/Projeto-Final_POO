@@ -1,0 +1,29 @@
+{
+    "italian_easy" : ["Amico", "Anno", "Aria", "Asta", "Atto",
+    "Bacio", "Banca", "Barca", "Bello", "Bosco",
+    "Buono", "Caffè", "Canto", "Carta", "Casa",
+    "Cielo", "Cuore", "Dente", "Donna", "Erba",
+    "Fiume", "Folla", "Forno", "Freddo", "Fuoco",
+    "Gatto", "Giorno", "Latte", "Legno", "Libro",
+    "Luna", "Madre", "Mela", "Monte", "Notte",
+    "Nuvola", "Pane", "Pesce", "Pioggia", "Sole"],
+    
+    
+    "italian_medium" : ["Amare", "Andare", "Aprire", "Arrivare", "Ascoltare",
+    "Aspettare", "Ballare", "Bere", "Cadere", "Cambiare",
+    "Cantare", "Capire", "Cercare", "Chiudere", "Chiamare",
+    "Cominciare", "Comprare", "Conoscere", "Correre", "Costruire",
+    "Credere", "Cucinare", "Decidere", "Descrivere", "Dimenticare",
+    "Diventare", "Dovere", "Entrare", "Esistere", "Finire",
+    "Fumare", "Giocare", "Guardare", "Imparare", "Incontrare",
+    "Insegnare", "Lavorare", "Leggere", "Mangiare", "Parlare"],
+
+    "italian_hard" : [ "Abbondanza", "Abbracciare", "Acquazzone", "partecipare", "Affettuoso",
+    "Agricoltore", "Allungabile", "Ambulanza", "Appartiene", "Archeologia",
+    "Bellissimo", "Bicicletta", "Caminetto", "Campanello", "Cantastorie",
+    "Cappuccino", "Carcerato", "Cassettoni", "Cavalcavia", "Chiacchiera",
+    "Collaudare", "Compagnone", "Condivisione", "Corridore", "Crostata",
+    "Dimenticanza", "Educazione", "Elettronica", "Felicitante", "Fioritura",
+    "Fotografia", "Gelsomino", "Gelatiera", "Imprenditore", "Imprevisto",
+    "Laboratorio", "Luminiscenza", "Meditazione", "Panettone", "Pasticcino"]
+}
