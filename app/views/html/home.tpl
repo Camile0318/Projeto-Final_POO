@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo ao Jogo</title>
-    <link rel="stylesheet" href="/static/styles.css"> <!-- Verifique se o caminho está correto -->
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Bem-vindo ao nosso jogo!</h1>
-            <p>Estamos felizes por você estar aqui. Prepare-se para se divertir!</p>
+            <h1>Jogo de Caça-Palavras</h1>
+            <p>Faça login para começar a jogar.</p>
         </header>
 
-        <section class="intro">
-            <h2>Como Funciona?</h2>
-            <p>Este é um jogo interativo onde você pode testar suas habilidades. Clique abaixo para começar a jogar!</p>
-        </section>
+        <section class="form-section">
+            <h2>Login</h2>
+            % if mensagem:
+                <p class="mensagem-erro">{{ mensagem }}</p>
+            % end
 
-        <section class="actions">
-            <a href="/selection" class="btn btn-primary">Iniciar Jogo</a>
+            <form action="/" method="post">
+                <div>
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
         </section>
 
         <footer>
-            <p>&copy; 2025 Jogo Divertido - Todos os direitos reservados.</p>
+            <p>© 2023 Seu Nome</p>
         </footer>
     </div>
-
-    <!-- Caso precise de JS na home, adicione no final do body -->
-    <script src="/static/js/{{script}}"></script> <!-- Se necessário, defina o script para a home -->
 </body>
 </html>

@@ -7,6 +7,25 @@ import json
 app = Bottle()
 ctl = Application()
 
+def carregar_usuarios(filepath):
+    """Carrega usuários de um arquivo JSON."""
+    try:
+        with open(filepath, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}  # Retorna dicionário vazio se o arquivo não existir ou for inválido
+
+def verificar_credenciais(username, password, users):
+    """Verifica se o usuário e a senha correspondem."""
+    if username in users:
+        if users[username] == password:
+            return True  # Usuário e senha corretos
+        else:
+            return False # Senha incorreta
+    return False  # Usuário não encontrado
+
+
+
 # Servir arquivos estáticos (CSS, JS, imagens, etc.)
 @app.route('/static/<filepath:path>')
 def serve_static(filepath):
@@ -38,9 +57,25 @@ def serve_json(language, level):
         return json.dumps({'error': 'Arquivo JSON não encontrado'})
 
 # Rota da página inicial
-@app.route('/')
+@app.route('/', method=['GET', 'POST'])  # Permite GET e POST
 def home():
-    return ctl.render('home')
+    mensagem = None
+    if request.method == 'POST':
+        username = request.forms.get('username')
+        password = request.forms.get('password')
+
+        # Substitua 'caminho/para/seu/arquivo/usuarios.json' pelo caminho real
+        users = carregar_usuarios('app/models/db/usuarios.json')
+        login_sucesso = verificar_credenciais(username, password, users)
+
+
+        if login_sucesso:
+            # Redireciona para a página de seleção após o login bem-sucedido
+            redirect('/selection')
+        else:
+            mensagem = "Usuário ou senha inválidos."
+
+    return template('app/views/html/home.tpl', mensagem=mensagem) #Passando a mensagem para o template
 
 # Rota da seleção de idioma e nível
 @app.route('/selection')
@@ -55,7 +90,7 @@ def game():
 # Rota de erro
 @app.route('/error')
 def error():
-    return ctl.render('error') 
+    return ctl.render('error')
 
 if __name__ == '__main__':
     run(app, host='0.0.0.0', port=7095, debug=True)
