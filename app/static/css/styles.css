@@ -329,10 +329,6 @@ button:active {
     transition: 0.2s;
 }
 
-.celula:hover {
-    background-color: lightgray;
-}
-
 
 
     font-size: 1.3rem;
