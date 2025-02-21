@@ -303,21 +303,22 @@ button:active {
 /* Estilos para o tabuleiro do jogo */
 #tabuleiro {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
-    gap: 8px;
-    margin: 0 auto;
-    max-width: 650px;
-    perspective: 1000px;
-    box-sizing: border-box;  /* Aplica o box-sizing */
+    grid-template-columns: repeat(3, 50px); /* Ajuste conforme necessário */
+    gap: 5px; /* Espaço entre as células */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 auto; /* Mantém o tabuleiro centralizado na tela */
 }
 
 .celula {
-    aspect-ratio: 1;
-    background: var(--element-bg);
-    border-radius: 14px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+}
+
     font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
