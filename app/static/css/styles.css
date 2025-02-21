@@ -303,17 +303,18 @@ button:active {
 /* Estilos para o tabuleiro do jogo */
 #tabuleiro {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr)); /* Alterado para auto-fill */
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
     gap: 8px;
     margin: 0 auto;
     max-width: 650px;
     perspective: 1000px;
+    box-sizing: border-box;  /* Aplica o box-sizing */
 }
 
 .celula {
     aspect-ratio: 1;
     background: var(--element-bg);
-    border-radius: 14px; /* Células mais arredondadas */
+    border-radius: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,8 +329,12 @@ button:active {
     color: var(--text);
     position: relative;
     overflow: hidden;
-    font-family: 'Quicksand', sans-serif; /* Fonte mais arredondada */
+    font-family: 'Quicksand', sans-serif;
+    display: flex;   /* Garantindo o alinhamento de conteúdo */
+    justify-content: center;
+    align-items: center;   /* Alinha o conteúdo da célula */
 }
+
 
 .celula::before {
     content: "";
