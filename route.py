@@ -52,15 +52,10 @@ def selection():
 def game():
     return ctl.render('game', script="game.js")
 
-# Rota da pontuação (a ser implementada depois)
-@app.route('/points')
-def points():
-    return ctl.render('points')
-
 # Rota de erro
 @app.route('/error')
 def error():
     return ctl.render('error') 
 
 if __name__ == '__main__':
-    run(app, host='0.0.0.0', port=7091, debug=True)
+    run(app, host='0.0.0.0', port=7095, debug=True)

@@ -7,7 +7,6 @@ class Application:
             'home': 'home',        # boas-vindas e registro
             'selection': 'selection',  # configuração do jogo
             'game': 'game',        # jogo
-            'points': 'points',
             'error' : 'error'    # jogador acessa seus pontos
         }
 

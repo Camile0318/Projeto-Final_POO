@@ -1,24 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const palavras = JSON.parse(localStorage.getItem("palavrasSelecionadas")) || [];
+    // Verifica se há palavras no localStorage
+    let palavras = [];
+    try {
+        palavras = JSON.parse(localStorage.getItem("palavrasSelecionadas")) || [];
+    } catch (e) {
+        console.error("Erro ao parsear palavras do localStorage:", e);
+        alert("Erro ao carregar palavras selecionadas!");
+        window.location.href = "/selection"; // Redireciona para a página de seleção
+        return; // Interrompe a execução do código
+    }
 
+    // Verifica se há palavras selecionadas
     if (palavras.length === 0) {
         alert("Nenhuma palavra selecionada!");
-        window.location.href = "/selection"; // Corrigir para redirecionar para a URL correta
+        window.location.href = "app/views/html/selection"; // Redireciona para a página de seleção
+        return; // Interrompe a execução do código
     }
 
     console.log("Palavras selecionadas:", palavras);
-    gerarTabuleiro(palavras);
+    gerarTabuleiro(palavras); // Gera o tabuleiro com as palavras
 });
 
 function gerarTabuleiro(palavras) {
-    const tamanho = 10; // Tamanho do grid 10x10
+    const tamanho = 20; // Tamanho do grid 20x20
     const tabuleiro = Array.from({ length: tamanho }, () => Array(tamanho).fill(""));
 
-    // Preenche com as palavras (implementando uma lógica simples de posicionamento)
+    // Preenche o tabuleiro com as palavras
     palavras.forEach((palavra) => {
         let inserida = false;
+        let tentativas = 0;
+        const maxTentativas = 100; // Limite de tentativas para evitar loops infinitos
 
-        while (!inserida) {
+        while (!inserida && tentativas < maxTentativas) {
+            tentativas++;
             const direcao = Math.random() < 0.5 ? 'horizontal' : 'vertical';
             const linha = Math.floor(Math.random() * tamanho);
             const coluna = Math.floor(Math.random() * tamanho);
@@ -41,11 +55,19 @@ function gerarTabuleiro(palavras) {
                 }
             }
         }
+
+        if (!inserida) {
+            console.error(`Não foi possível inserir a palavra: ${palavra}`);
+        }
     });
 
     // Renderiza o tabuleiro na página
     const container = document.getElementById("tabuleiro");
-    container.innerHTML = ""; // Limpa antes de inserir
+    if (!container) {
+        console.error("Elemento #tabuleiro não encontrado!");
+        return;
+    }
+    container.innerHTML = ""; // Limpa o conteúdo anterior
 
     for (let i = 0; i < tamanho; i++) {
         let row = document.createElement("div");
@@ -54,7 +76,17 @@ function gerarTabuleiro(palavras) {
         for (let j = 0; j < tamanho; j++) {
             let cell = document.createElement("span");
             cell.classList.add("celula");
-            cell.textContent = tabuleiro[i][j] || "_"; // Se vazio, mostra "_"
+        
+            // Verifica se a célula está vazia
+            if (tabuleiro[i][j] === undefined || tabuleiro[i][j] === null || tabuleiro[i][j] === "") {
+                // Gera uma letra aleatória
+                const letras = "abcdefghijklmnopqrstuvwxyz";
+                const letraAleatoria = letras[Math.floor(Math.random() * letras.length)];
+                cell.textContent = letraAleatoria;
+            } else {
+                cell.textContent = tabuleiro[i][j];
+            }
+        
             row.appendChild(cell);
         }
 

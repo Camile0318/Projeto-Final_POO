@@ -21,8 +21,6 @@
 
         <section class="actions">
             <a href="/selection" class="btn btn-primary">Iniciar Jogo</a>
-            <p>Ou, se quiser, acesse seus pontos:</p>
-            <a href="/points" class="btn btn-secondary">Ver Meus Pontos</a>
         </section>
 
         <footer>

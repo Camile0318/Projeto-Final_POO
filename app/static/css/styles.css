@@ -78,3 +78,19 @@ a {
 a:hover {
     color: var(--cream);
 }
+
+.linha {
+    display: flex;
+}
+
+.celula {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1f1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
