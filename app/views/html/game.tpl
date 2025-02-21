@@ -11,7 +11,7 @@
     <div class="container">
         <header>
             <h1>Encontre as palavras!</h1>
-            <p>Divirta-se!!</p>
+            <p>Divirta-se!</p>
         </header>
         <div id="tabuleiro"></div>
         <script src="/static/js/{{script}}"></script>
