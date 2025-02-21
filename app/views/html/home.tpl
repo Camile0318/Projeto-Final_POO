@@ -1,11 +1,11 @@
-<!AAAAA html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo ao Jogo</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Verifique se o caminho está correto -->
 </head>
 <body>
     <div class="container">
@@ -29,5 +29,8 @@
             <p>&copy; 2025 Jogo Divertido - Todos os direitos reservados.</p>
         </footer>
     </div>
+
+    <!-- Caso precise de JS na home, adicione no final do body -->
+    <script src="/static/js/{{script}}"></script> <!-- Se necessário, defina o script para a home -->
 </body>
 </html>

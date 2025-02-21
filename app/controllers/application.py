@@ -7,14 +7,14 @@ class Application:
             'home': 'home',        # boas-vindas e registro
             'selection': 'selection',  # configuração do jogo
             'game': 'game',        # jogo
-            'points': 'points' ,
+            'points': 'points',
             'error' : 'error'    # jogador acessa seus pontos
         }
 
-    def render(self, page):
+    def render(self, page, script=None):
         # Se a página não for encontrada, renderiza um template de erro
         template_name = self.pages.get(page, 'error')  # 'error' se a página não existir
-        return template(f'app/views/html/{template_name}.tpl')
+        return template(f'app/views/html/{template_name}.tpl', script=script)
 
     def page_not_found(self):
         # Retorna um template de erro personalizado
