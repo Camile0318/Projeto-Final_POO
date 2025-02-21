@@ -76,7 +76,7 @@ function gerarTabuleiro(palavras) {
         for (let j = 0; j < tamanho; j++) {
             const cell = document.createElement("span");
             cell.classList.add("celula");
-            cell.textContent = tabuleiro[i][j] || String.fromCharCode(65 + Math.floor(Math.random() * 26)); // A-Z
+            cell.textContent = tabuleiro[i][j] || String.fromCharCode(97 + Math.floor(Math.random() * 26)); // A-Z
             cell.dataset.linha = i;
             cell.dataset.coluna = j;
             container.appendChild(cell);
