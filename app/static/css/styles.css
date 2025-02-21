@@ -303,11 +303,15 @@ button:active {
 /* Estilos para o tabuleiro do jogo */
 #tabuleiro {
     display: grid;
-    grid-template-columns: repeat(3, 50px); /* Ajuste conforme necessário */
+    grid-template-columns: repeat(10, 50px); /* Agora são 10 colunas */
     gap: 5px; /* Espaço entre as células */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    margin: 0 auto; /* Mantém o tabuleiro centralizado na tela */
+    margin: 20px auto; /* Mantém o tabuleiro centralizado na tela */
+    padding: 10px; /* Espaço interno para estética */
+    background-color: #eee; /* Fundo do tabuleiro */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 .celula {
@@ -317,7 +321,17 @@ button:active {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    background-color: white;
+    font-size: 20px; /* Ajuste do tamanho do texto */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
 }
+
+.celula:hover {
+    background-color: lightgray; /* Efeito ao passar o mouse */
+}
+
 
     font-size: 1.3rem;
     font-weight: 600;
