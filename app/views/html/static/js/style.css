@@ -1,0 +1,80 @@
+/* Importando uma fonte elegante */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Definição das cores principais */
+:root {
+    --brown-dark: #3E2723;
+    --brown-light: #795548;
+    --cream: #D7CCC8;
+    --gold-accent: #A67C00;
+    --text-color: #F5F5F5;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--brown-dark), var(--brown-light));
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilização dos botões */
+button {
+    background: var(--gold-accent);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--brown-dark);
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: var(--cream);
+    color: var(--brown-dark);
+    transform: scale(1.05);
+}
+
+/* Containers e cards */
+.container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+    text-align: center;
+}
+
+.card {
+    background: var(--brown-light);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Links personalizados */
+a {
+    color: var(--gold-accent);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--cream);
+}
